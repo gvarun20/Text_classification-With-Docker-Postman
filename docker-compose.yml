@@ -1,0 +1,9 @@
+services:
+  mlapp:
+    container_name: mlapp
+    image: varunmlapp
+    ports:
+      - 5000:5000
+    build:
+      context: .
+      dockerfile: Dockerfile
